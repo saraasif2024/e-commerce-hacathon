@@ -6,7 +6,12 @@ import { AiOutlineCheck } from 'react-icons/ai'
 import { IoMdStar } from 'react-icons/io'
 
 
-const Card = ({name , feedback}:any) => {
+interface CardProps {
+  name: string;
+  feedback: string;
+}
+
+const Card: React.FC<CardProps> = ({ name, feedback }) => {
   return (
     <div>
       <div className='flex-col w-[358px] h-[186.19px] xl:w-[500px] p-[12px]  xl:h-[260px] xl:py-[28px] xl:px-[32px] border-2 border-[#0000001A]'>
